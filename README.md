@@ -34,16 +34,6 @@ SQL Agent is a tool designed to interact with SQLite databases using natural lan
     pip install -r requirements.txt
     ```
 
-4. **Set Environment Variables:**
-
-    The application requires an OpenAI API key. You can set it by running:
-
-    ```bash
-    export OPENAI_API_KEY=your_api_key_here
-    ```
-
-    Alternatively, the application will prompt you to enter it if not set.
-
 ## Usage
 
 1. **Run the application:**
