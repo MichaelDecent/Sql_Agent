@@ -42,12 +42,6 @@ SQL Agent is a tool designed to interact with SQLite databases using natural lan
     python main.py
     ```
 
-2. **Running Tests:**
-
-    ```bash
-    python -m unittest discover tests
-    ```
-
 ## Configuration
 
 All configuration settings are located in the `config/settings.py` file. You can modify environment variables and other settings as needed.
