@@ -1,18 +1,14 @@
 # tools/db_tools.py
-from langchain_community.utilities import SQLDatabase
+from os import getenv
 from langchain_community.agent_toolkits import SQLDatabaseToolkit
 from langchain_openai import ChatOpenAI
 from langchain_core.tools import tool
 from workflows.state_management import State, SubmitFinalAnswer
 from langchain_core.messages import AIMessage, ToolMessage
 from langchain_core.prompts import ChatPromptTemplate
-from dotenv import load_dotenv
-from os import getenv
+from langchain_community.utilities import SQLDatabase
 
-load_dotenv()
-
-# Initialize SQL database
-db = SQLDatabase.from_uri(getenv("DB_URI"))
+db = SQLDatabase.from_uri(getenv('DATABASE_URL'))
 
 
 @tool
